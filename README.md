@@ -4,3 +4,4 @@
 
 #### Team members: (team: add your name below when you get in)
 ### Chase Staples
+### Guan Ming Chee
