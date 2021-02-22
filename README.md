@@ -3,9 +3,6 @@
 ## Team Lead: James Mullaney 
 
 #### Team members: (team: add your name below when you get in)
-### Chase Staples
-### Guan Ming Chee
-### Deekshith Maram
 <table>
   <tr>
   <td align="center"><a href="https://github.com/GuanMingChee"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQFGCcqJt0vhMw/profile-displayphoto-shrink_800_800/0/1579219859147?e=1618444800&v=beta&t=7O8YlngIKOk8uvVM3E68Sv_VFgb7Da5xC9lz6PejEGQ" width="100px;" alt=""/><br /><sub><b>Guan Ming Chee</b></sub></a><br /><a href="https://github.com/GuanMingChee" title="Code">💻</a></td>
