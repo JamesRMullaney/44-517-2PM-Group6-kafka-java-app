@@ -38,7 +38,7 @@ mvn clean compile assembly:single
 
 ## Start Consumer
 
-Open PowerShell as Administrator in the root project folder, start the original consumer app using topic test and group1 with:
+Open PowerShell as Administrator in the root project folder, start the original consumer app using your topic and group ID with:
 
 ```PowerShell
 ```
