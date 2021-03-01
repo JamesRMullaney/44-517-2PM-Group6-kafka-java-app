@@ -12,3 +12,41 @@
      <td align="center"><a href="https://github.com/Dixith1196"><img src="https://avatars.githubusercontent.com/u/60023341?s=460&u=fb45357be42f7f2b97401c4e7f6e607b781c8f8b&v=4" width="100px;" alt=""/><br /><sub><b>Deekshith Maram</b></sub></a><br /><a href="https://github.com/Dixith1196" title="Code">💻</a></td>
   </tr>
 </table>
+
+## Prerequisities
+
+* OpenJDK or JDK (8 or up)
+* Apache Zookeeper, installed and working
+* Apache Kafka, installed and working
+
+## Start Zookeeper Service
+
+Start Zookeeper service. 
+
+## Start Kafka Service
+
+Start Kafka service. 
+
+## Create the Topic
+
+Create a Kafka topic. 
+
+
+```PowerShell
+mvn clean compile assembly:single
+```
+
+## Start Consumer
+
+Open PowerShell as Administrator in the root project folder, start the original consumer app using topic test and group1 with:
+
+```PowerShell
+```
+
+## Start Producer
+
+Open a new PowerShell as Administrator in the root project folder, start the Producer app using topic test:
+
+```PowerShell
+
+```
