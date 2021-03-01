@@ -40,7 +40,7 @@ public class ProducerByChase {
 
     for (int i = 1; i <= 10; i++) {
         String game = favGame(i);
-        ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicName, game;
+        ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicName, game);
         producer.send(record);
       }
     // still allowing input from keyboard
@@ -57,7 +57,7 @@ public class ProducerByChase {
 
   }
 
-  private static String favGame(int x) {
+  public static void favGame(int x) {
     Dictionary<Integer, String> people = new Hashtable<Integer, String>();
     people.put(1, "Chase"); people.put(2, "Chee"); people.put(3, "James");
     people.put(4, "Carl"); people.put(5, "William"); people.put(6, "Alex");
@@ -68,11 +68,11 @@ public class ProducerByChase {
         "Minecraft", "COD", "Destiny",
         "Farcry", "League of Legends", "Last of Us",
         "Fortnite"
+      };
     }
 
     int game = new Random().nextInt(games.length);
 
-    return System.out.println(people.get(x) + "favorite game is: " + games[game]);
+    System.out.println(people.get(x) + "favorite game is: " + games[game]);
         
-  }
 }
