@@ -21,23 +21,29 @@
 
 ## Start Zookeeper Service
 
+In kafka_version folder:
 ```PowerShell
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 ```
 
 ## Start Kafka Service
 
+In kafka_version folder:
 ```PowerShell
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 ```
 
 ## Create the Topic
 
+In kafka_version folder:
+
 ```PowerShell
 .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic TOPIC-NAME-HERE
 ```
 
 ## Compile and Build Fat Jar File
+
+In root project folder:
 
 ```PowerShell
 mvn clean compile assembly:single
