@@ -71,8 +71,10 @@ public class ProducerByChase {
       };
     }
 
-    int game = new Random().nextInt(games.length);
+    Random game = new Random();
 
-    System.out.println(people.get(x) + "favorite game is: " + games[game]);
+    int newGame = game.nextInt(games.length);
+
+    System.out.println(people.get(x) + "favorite game is: " + games[newGame]);
         
 }
