@@ -6,7 +6,6 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.util.Properties;
 import java.util.Scanner;
-import java.util.Random;
 
 /**
  * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
@@ -38,21 +37,19 @@ public class ProducerByChee {
 
     // Make our own messages - create your custom logic here
 
-    for (int i = 10; i <= 1; i--) {
-      String message = "hello" + i;
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
-      producer.send(rec);
-    }
-
     // still allow input from keyboard
 
     String line = in.nextLine();
+    int sum = 0;
+    char [] newchr = line.toCharArray();
     while (!line.equals("exit")) {
-        Random rand = new Random();
-        String [] color = {"red","orange","yellow","green","blue","indigo","purple"};
-        int index = rand.nextInt(color.length);
-        String chosencolor = message + color[index];
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, chosencolor);
+      for (int i=0;i<newchr.length;i++){
+        char singlechr = newchr[i];
+        int a = singlechr;
+        sum+=a;
+      }
+      String sum_str=  "Sum of Ascii value of " + line + " is " + String.valueOf(sum);
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, sum_str);
 
       producer.send(rec);
       line = in.nextLine();
