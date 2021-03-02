@@ -41,6 +41,7 @@ mvn clean compile assembly:single
 Open PowerShell as Administrator in the root project folder, start the original consumer app using your topic and group ID with:
 
 ```PowerShell
+java -cp target/44-517-2PM-Group6-kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasec2group6.kafka.Consumer test group1
 ```
 
 ## Start Producer
@@ -49,4 +50,5 @@ Open a new PowerShell as Administrator in the root project folder, start the Pro
 
 ```PowerShell
 java -cp target/44-517-2PM-Group6-kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasec2group6.kafka.ProducerByChase test
+java -cp target/44-517-2PM-Group6-kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasec2group6.kafka.ProducerByChee test
 ```
