@@ -22,7 +22,7 @@
 ## Start Zookeeper Service
 
 ```PowerShell
-.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties 
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 ```
 
 ## Start Kafka Service
