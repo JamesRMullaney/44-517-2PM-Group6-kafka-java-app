@@ -8,7 +8,7 @@ import java.util.Properties;
 import java.util.Scanner;
 
 /**
- * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
+ * Code from Dr. Denise Case on 10/29/2019. Modified by Guan Ming Chee (line 42-52) on March 1st 2021.
  */
 public class ProducerByChee {
   private static Scanner in;
@@ -37,7 +37,7 @@ public class ProducerByChee {
 
     // Make our own messages - create your custom logic here
 
-    // still allow input from keyboard
+    // input string into list char, sum their ascii values
 
     String line = in.nextLine();
     int sum = 0;
