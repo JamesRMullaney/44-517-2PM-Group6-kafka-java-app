@@ -81,3 +81,28 @@ In kafka_version folder open a powershell window and use the following command t
 ```PowerShell
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 ```
+### Building the Fat Jar File:
+
+- Go the project's root folder and open the powershell window and use the following command to create a Fat Jar file.
+
+```
+mvn clean compile assembly:single
+```
+
+### Starting the consumer:
+
+- While in the project's root folder open another powershell window and use the following command to start the Consumer.
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.Consumer kafka group1
+```
+
+- Keep this window open to see the output after starting the producer.
+
+## Starting the Producer:
+
+- While in the project's root folder open another powershell window and use the following command to start the Producer.
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.DixitProducer kafka
+```
