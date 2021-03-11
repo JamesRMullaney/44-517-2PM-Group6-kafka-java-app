@@ -74,3 +74,10 @@ In kafka_version folder open a powershell window and use the following command t
 ```PowerShell
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 ```
+
+### Kafka Service:
+
+In kafka_version folder open a powershell window and use the following command to start the Kafka Service:
+```PowerShell
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+```
