@@ -65,3 +65,12 @@ Open a new PowerShell as Administrator in the root project folder, start the Pro
 java -cp target/44-517-2PM-Group6-kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasec2group6.kafka.ProducerByChase test
 java -cp target/44-517-2PM-Group6-kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatasec2group6.kafka.ProducerByChee test
 ```
+
+## Dixit Kafka-Commands:
+
+### Start Zookeeper Service
+
+In kafka_version folder open a powershell window and use the following command to start the Zookeeper Service:
+```PowerShell
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+```
